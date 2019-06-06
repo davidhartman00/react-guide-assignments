@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-class UserInput extends Component {
-    render() {
+const UserInput = (props) => {
+    
         const style = {
             backgroundColor: "#eee",
             border: "1px solid red",
@@ -17,7 +17,7 @@ class UserInput extends Component {
                 value={this.props.username} placeholder="enter a username"/>
             </div>
         )
-    }
+    
 }
 
 
