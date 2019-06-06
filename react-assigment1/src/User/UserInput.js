@@ -13,8 +13,8 @@ const UserInput = (props) => {
             <div>
                 <input 
                 style={style}
-                onChange={this.props.changeUsername}
-                value={this.props.username} placeholder="enter a username"/>
+                onChange={props.changeUsername}
+                value={props.username} placeholder="enter a username"/>
             </div>
         )
     
