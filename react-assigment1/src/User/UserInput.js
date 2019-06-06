@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const UserInput = (props) => {
+const userInput = (props) => {
     
         const style = {
             backgroundColor: "#eee",
@@ -21,4 +21,4 @@ const UserInput = (props) => {
 }
 
 
-export default UserInput
+export default userInput
