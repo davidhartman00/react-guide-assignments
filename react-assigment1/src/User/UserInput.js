@@ -14,7 +14,8 @@ const userInput = (props) => {
                 <input 
                 style={style}
                 onChange={props.changeUsername}
-                value={props.value} placeholder="enter a username"/>
+                value={props.value} 
+                placeholder="enter a username"/>
             </div>
         )
     

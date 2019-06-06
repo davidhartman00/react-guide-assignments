@@ -8,7 +8,7 @@ import "./UserOutput.css";
         return (
           <div className="UserOutput">
             <p>
-             {this.props.username}
+             Username: {this.props.username}
             </p>
             <p>
               First, make sure you are in the project root directory and
