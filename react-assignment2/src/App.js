@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Validation from "./Validation/Validation";
-import CharComponent from "./CharComponent/CharComponent";
+import Char from "./Char/Char";
 
 class App extends React.Component {
   state = {
@@ -29,6 +29,15 @@ class App extends React.Component {
   }
 
   render() {
+    const charList = this.state.message.split("").map((el,idx)=>{
+        return (
+          <Char
+            char={el}
+            click={()=>this.charDeleteHandler(idx)}
+            key={idx}
+          />
+        );
+    })
     return (
       <div className="App">
         <input type="text"
@@ -36,10 +45,7 @@ class App extends React.Component {
         value={this.state.message}/>
         <p>{this.state.message.length}</p>
         <Validation length={this.state.message.length} />
-        <CharComponent
-          message={this.state.message}
-          charDelete={this.charDeleteHandler}
-        />
+        {charList}
       </div>
     );
   }
