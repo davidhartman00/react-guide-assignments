@@ -1,0 +1,7 @@
+.char-component ul{
+    list-style: none;
+}
+.char-component li{
+    cursor: pointer;
+}
+
