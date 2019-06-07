@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.css';
-import ValidationComponent from "./ValidationComponent/ValidationComponent";
+import Validation from "./Validation/Validation";
 import CharComponent from "./CharComponent/CharComponent";
 
 class App extends React.Component {
   state = {
-    length: 0,
     message: ""
   };
 
   messageHandler = event => {
     this.setState({
-      length: event.target.value.length,
       message: event.target.value
     });
   };
@@ -36,8 +34,8 @@ class App extends React.Component {
         <input type="text"
         onChange={this.messageHandler}
         value={this.state.message}/>
-        <p>{this.state.length}</p>
-        <ValidationComponent length={this.state.length} />
+        <p>{this.state.message.length}</p>
+        <Validation length={this.state.message.length} />
         <CharComponent
           message={this.state.message}
           charDelete={this.charDeleteHandler}
