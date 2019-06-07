@@ -3,13 +3,11 @@ import './App.css';
 import ValidationComponent from "./ValidationComponent/ValidationComponent";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
   
-    this.state = {
+    state = {
        length: 0
     }
-  }
+  
   
 
   textLengthHandler = (event) =>{
